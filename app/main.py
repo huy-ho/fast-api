@@ -1,5 +1,4 @@
 from fastapi import FastAPI, Response, status, HTTPException
-from fastapi.params import Body
 from pydantic import BaseModel
 from typing import Optional
 from random import randrange
@@ -87,5 +86,5 @@ def update_post(id: int, post: Post):
     post_dict = post.dict()
     post_dict['id'] = id
     my_posts[index] = post_dict
-    return {"data": "updated post"} #upd
+    return {"data": "updated post"}
 
