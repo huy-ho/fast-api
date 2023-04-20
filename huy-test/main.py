@@ -98,3 +98,4 @@ def update_product(id: int, prod: Product):
     my_products[index] = post_dict
     return {"data": "updated post"}
 
+#commits
